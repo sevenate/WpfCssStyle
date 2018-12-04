@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfCssStyle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:WPF="clr-namespace:WpfCssStyle"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="550">
+    <Window.Resources>
+        <Style TargetType="{x:Type Label}"                              BasedOn="{WPF:CssStyle Names='size16 gray georgia'}" />
+    </Window.Resources>
+    <StackPanel>
+        <Label Content="Type-level: size16 + gray + georgia" />
+        <Label Content="'h1': size24 + royalBlue"                       Style="{DynamicResource h1}" />
+        <Label Content="'warning': size24 + yellow + bold + shadow"     Style="{DynamicResource warning}" />
+        <Label Content="Inline: size12 + italic"                        Style="{WPF:CssStyle Names='size12 italic'}" />
+        <Label Content="Inline: size16 + bold + italic + green + red"   Style="{WPF:CssStyle Names='size24 bold italic green red'}" />
+        <Label Content="Inline: size24 + green"                         Style="{WPF:CssStyle Names='size24 green'}" />
+    </StackPanel>
+</Window>

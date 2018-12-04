@@ -1,0 +1,64 @@
+﻿<Application x:Class="WpfCssStyle.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:WPF="clr-namespace:WpfCssStyle"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Sizes -->
+        <Style x:Key="size12" TargetType="Label">
+            <Setter Property="FontSize" Value="12" />
+        </Style>
+        <Style x:Key="size16" TargetType="Label">
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+        <Style x:Key="size24" TargetType="Label">
+            <Setter Property="FontSize" Value="24" />
+        </Style>
+        <!-- Bold/Italic -->
+        <Style x:Key="bold" TargetType="Label">
+            <Setter Property="FontWeight" Value="ExtraBold" />
+        </Style>
+        <Style x:Key="italic" TargetType="Label">
+            <Setter Property="FontStyle" Value="Italic" />
+        </Style>
+        <!-- Colors -->
+        <Style x:Key="gray" TargetType="Label">
+            <Setter Property="Foreground" Value="#333333" />
+        </Style>
+        <Style x:Key="royalBlue" TargetType="Label">
+            <Setter Property="Foreground" Value="RoyalBlue" />
+        </Style>
+        <Style x:Key="green" TargetType="Label">
+            <Setter Property="Foreground" Value="Green" />
+        </Style>
+        <Style x:Key="yellow" TargetType="Label">
+            <Setter Property="Foreground" Value="Yellow" />
+        </Style>
+        <Style x:Key="red" TargetType="Label">
+            <Setter Property="Foreground" Value="#D00000" />
+        </Style>
+        <!-- Fonts -->
+        <Style x:Key="verdana" TargetType="Label">
+            <Setter Property="FontFamily" Value="Verdana" />
+        </Style>
+        <Style x:Key="georgia" TargetType="Label">
+            <Setter Property="FontFamily" Value="Georgia" />
+        </Style>
+        <!-- Effects -->
+        <Style x:Key="shadow" TargetType="Label">
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect ShadowDepth="0" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- Predefined Combinations -->
+        <Style x:Key="h1" TargetType="{x:Type Label}"
+               BasedOn="{WPF:CssStyle Names='size24 royalBlue'}" />
+        <Style x:Key="warning" TargetType="{x:Type Label}"
+               BasedOn="{WPF:CssStyle Names='size24 yellow bold shadow'}">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="Yellow" />
+        </Style>
+    </Application.Resources>
+</Application>

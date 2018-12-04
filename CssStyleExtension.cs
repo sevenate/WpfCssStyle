@@ -9,7 +9,7 @@ namespace WpfCssStyle
     public class CssStyleExtension : MarkupExtension
     {
         /// <summary>
-        ///     Set space-separated style names i.e. "size16 grey verdana".
+        ///     Set space-separated style names i.e. "size16 gray verdana".
         /// </summary>
         public string Names { private get; set; }
 

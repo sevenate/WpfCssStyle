@@ -10,10 +10,12 @@ Key code is in [CssStyleExtension.cs](CssStyleExtension.cs)
 
 For more examples see [App.xaml](App.xaml) and [MainWindow.xaml](MainWindow.xaml)
 
-## Design mode works in both Visual Studio 2017 and Blend for Visual Studio S2017
+## Design mode
+
+### Visual Studio 2017 
 
 <img align="right" src="https://github.com/sevenate/WpfCssStyle/blob/master/screenshot-vs2017.gif">
 
-
+### Blend for Visual Studio S2017
 
 <img align="right" src="https://github.com/sevenate/WpfCssStyle/blob/master/screenshot-blend2017.gif">

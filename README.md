@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/c83f94dp4uk8rcms?svg=true)](https://ci.appveyor.com/project/sevenate/wpfcssstyle)
+
 # WPF Styles in CSS way
 
 Example of mixing **WPF** styles in a CSS-like format by using custom markup extension:
@@ -10,7 +12,7 @@ Key code is in [CssStyleExtension.cs](CssStyleExtension.cs)
 
 For more examples see [App.xaml](App.xaml) and [MainWindow.xaml](MainWindow.xaml)
 
-## Design mode
+## Design mode support
 
 ### Visual Studio 2017 
 
